@@ -6,5 +6,48 @@
   </head>
   <body>
 
+    <h1>About Me Page</h1>
+    <h2>About Me Page</h2>
+    <h3>About Me Page</h3>
+
+    <p>hey this is a paraagraph</p>
+
+    <ul>
+      <li>list item 1</li>
+      <li>list item 2</li>
+
+    </ul>
+
+        <ol>
+            <li>list item 1</li>
+            <li>list item 2</li>
+        </ol>
+<!-- # ===ID -->
+<!-- . ===CLASS --->
+<form id="sayHi">
+    <input id="firstName" type="text" name="firstname">
+    <input type="submit" value="Submit">
+</form>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+  $(function(){
+
+      $("#sayHi").on("submit", function(e) {
+
+          e.preventDefault();
+
+          var firstName = $("#firstname").value;
+
+          alert("Hello, " + firstName);
+
+
+      });
+
+  });
+
+</script>
+
   </body>
 </html>
