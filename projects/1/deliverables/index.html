@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <meta charset="utf-8">
-    <title>About Me Page</title>
+    <title>Kelsey Ledbetter</title>
   </head>
   <body>
 
-    <h1>About Me Page</h1>
-    <h2>About Me Page</h2>
-    <h3>About Me Page</h3>
+    <ul id="nav_ul">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
 
-    <p>hey this is a paraagraph</p>
+      <li>
+        <a href="contact.html" target="_blank">Contact</a>
+      </li>
 
-    <ul>
-      <li>list item 1</li>
-      <li>list item 2</li>
-
+      <li>
+        <a href="about.html">About</a>
+      </li>
     </ul>
 
+    <h1>Kelsey Ledbetter</h1>
+
+
+    <h2>Bio</h2>
+
+    <p>I'm a student at the University of Colorado studying Information Management. I am focusing on data management utilizing SQL, Python, R and other data analysis tools. I am hoping to graduate in the spring of 2017</p>
+
+    <h2>Educaition</h2>
+
+    <p>Universally undrafted in fantasy leagues this summer, Taylor is currently tied for fifth in ESPN fantasy points per game among quarterbacks with Carson Palmer. ESPN Stats & Info reports Taylor's 95.3 Total QBR in Week 3 as the highest by a Bills quarterback since at least 2006, the first season in ESPN's QBR database. </p>
+
+
+
+  <h2>Skills Utilized</h2>
+
+  <div class="skills">
+
+    <ul>
+        <li>
+            <h3>SQL</h3>
+            <p>conduct research and anlaysis</p>
+            <p>extract information from large datasets</p>
+        </li>
+
+        <li>
+            <h3>Unix/Linux</LI></h3>
+            <p>Jannus Landing - Tampa, FL</p>
+        </li>
+
+        <li>
+            <h3>DBMS</h3>
+            <p>The Tabernacle - Atlanta, GA</p>
+        </li>
+
+        <li>
+            <h3>HTML/CSS</h3>
+            <p>40 Watt Club - Athens, GA</p>
+        </li>
+    </ul>
+
+</div>
         <ol>
             <li>list item 1</li>
             <li>list item 2</li>
         </ol>
-<!-- # ===ID -->
-<!-- . ===CLASS --->
-<form id="sayHi">
-    <input id="firstName" type="text" name="firstname">
+
+<form id="yousuck">
+    <input id="firstName" type="text" name="fistname">
     <input type="submit" value="Submit">
 </form>
 
@@ -34,13 +77,13 @@
 
   $(function(){
 
-      $("#sayHi").on("submit", function(e) {
+      $("#yousuck").on("submit", function(e) {
 
           e.preventDefault();
 
-          var firstName = $("#firstname").value;
+          var firstName = $("#firstName").val();
 
-          alert("Hello, " + firstName);
+          alert("You suck, " + firstName);
 
 
       });
@@ -48,6 +91,14 @@
   });
 
 </script>
+
+<div id="footer">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
 
   </body>
 </html>
