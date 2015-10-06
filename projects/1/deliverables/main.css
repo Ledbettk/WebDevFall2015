@@ -25,6 +25,13 @@ div {
 	padding-bottom: 8px;
 }
 
+img {
+	height: 200px;
+	width: 200px;
+	display: block;
+    margin: 0 auto;
+}
+
 a:hover {
 	text-decoration: underline;
 	color: #5CE6B8;
