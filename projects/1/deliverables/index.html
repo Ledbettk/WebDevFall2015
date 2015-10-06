@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
     <meta charset="utf-8">
     <title>Kelsey Ledbetter</title>
   </head>
   <body>
 
-    <ul id="nav_ul">
+    <ul class="nav_ul">
       <li>
         <a href="index.html">Home</a>
       </li>
@@ -23,16 +23,29 @@
 
     <h1>Kelsey Ledbetter</h1>
 
+<div class="container">
 
-    <h2>Bio</h2>
+    <header class="section-header">
+
+          <h2 class="section-title"><span>Bio</span></h2>
+
+    </header>
 
     <p>I'm a student at the University of Colorado studying Information Management. I am focusing on data management utilizing SQL, Python, R and other data analysis tools. I am hoping to graduate in the spring of 2017</p>
 
-    <h2>Educaition</h2>
+</div>
+
+<div class="container">
+
+    <header class="section-header">
+
+          <h2 class="section-title"><span>Education</span></h2>
+
+    </header>
 
     <p>Universally undrafted in fantasy leagues this summer, Taylor is currently tied for fifth in ESPN fantasy points per game among quarterbacks with Carson Palmer. ESPN Stats & Info reports Taylor's 95.3 Total QBR in Week 3 as the highest by a Bills quarterback since at least 2006, the first season in ESPN's QBR database. </p>
 
-
+</div>
 
   <h2>Skills Utilized</h2>
 
@@ -46,7 +59,7 @@
         </li>
 
         <li>
-            <h3>Unix/Linux</LI></h3>
+            <h3>Unix/Linux</h3>
             <p>Jannus Landing - Tampa, FL</p>
         </li>
 
@@ -67,7 +80,7 @@
             <li>list item 2</li>
         </ol>
 
-<form id="yousuck">
+<form id="hithere">
     <input id="firstName" type="text" name="fistname">
     <input type="submit" value="Submit">
 </form>
@@ -77,13 +90,13 @@
 
   $(function(){
 
-      $("#yousuck").on("submit", function(e) {
+      $("#hithere").on("submit", function(e) {
 
           e.preventDefault();
 
           var firstName = $("#firstName").val();
 
-          alert("You suck, " + firstName);
+          alert("Hi there, " + firstName);
 
 
       });
