@@ -1,0 +1,8 @@
+body {
+	background: red;
+}
+
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+}
